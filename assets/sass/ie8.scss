@@ -3,48 +3,68 @@
 @import 'libs/mixins';
 
 /*
-	ZeroFour by HTML5 UP
+	Overflow by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
 /* Basic */
 
-	.button,
-	.image img {
-		-ms-behavior: url('assets/js/ie/PIE.htc');
-	}
-
-/* Wrappers */
-
-	#header-wrapper {
-		background: url('../../images/header.jpg');
-		background-position: center center;
+	body {
+		background-image: url('../../images/bg.jpg');
+		background-repeat: no-repeat;
 		background-size: cover;
+		background-position: auto;
+		background-attachment: scroll;
 		-ms-behavior: url('assets/js/ie/backgroundsize.min.htc');
 	}
 
-	#main-wrapper {
-		.main-wrapper-style1,
-		.main-wrapper-style3 {
-			background: #f8f8f8;
+/* Section/Article */
+
+	section > .last-child,
+	article > .last-child,
+	section.last-child,
+	article.last-child {
+		margin-bottom: 0;
+	}
+
+/* Button */
+
+	input[type="button"],
+	input[type="submit"],
+	input[type="reset"],
+	button,
+	.button {
+		position: relative;
+		-ms-behavior: url('assets/js/ie/PIE.htc');
+
+		&.style2 {
+			&:hover {
+				color: #35b88f !important;
+			}
+		}
+
+		&.style3 {
+			background: #fefefe;
+			border: solid 1px #dad9d9;
+		}
+	}
+
+/* Footer */
+
+	#footer {
+		.icons {
+			position: relative;
+			-ms-behavior: url('assets/js/ie/PIE.htc');
 		}
 	}
 
 /* Header */
 
-	#header .inner {
-		-ms-behavior: url('assets/js/ie/PIE.htc');
-	}
-
-/* Nav */
-
-	.dropotron {
-		box-shadow: 0;
-		-ms-behavior: url('assets/js/ie/PIE.htc');
-
-		&.level-0 {
-			box-shadow: 0;
-			-ms-behavior: url('assets/js/ie/PIE.htc');
+	#header {
+		header {
+			p {
+				border-top: solid 1px #888;
+			}
 		}
 	}
