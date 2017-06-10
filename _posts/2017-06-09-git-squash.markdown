@@ -7,7 +7,7 @@ git config --global alias.squash '!f(){ git reset --soft HEAD~${1} && git commit
 [alias]
     squash = "!f(){ git reset --soft HEAD~${1} && git commit --edit -m\"$(git log --format=%B --reverse HEAD..HEAD@{1})\"; };f"
 ```
-3. How to use it?
+3. How to use it? Assuming to squash last N commits:
 ```
->git squash 2  
+>git squash N 
 ```  
