@@ -8,8 +8,4 @@
 
 * In Xcode, put the cursor on the upper line of **func**, then select Xcode menu bar: 
     **Editor** -> **CommentGenerator** -> **Generate Func Comment**:
-
 ![CommentPlus]({{ site.url }}/assets/comment.gif)
-
-
-
